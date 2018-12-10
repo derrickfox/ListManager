@@ -7,7 +7,7 @@ import {
  } from 'rxjs/operators';
 
 import { Hero } from '../hero-detail/hero';
-import { HeroService } from '../hero.service';
+import { HeroService } from '../services/hero.service';
 
 @Component({
   selector: 'app-hero-search',
