@@ -1,27 +1,29 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
-import { HeroesComponent } from './heroes.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
-describe('HeroesComponent', () => {
-  let component: HeroesComponent;
-  let fixture: ComponentFixture<HeroesComponent>;
+import { ListSearchComponent } from './list-search.component';
+
+
+describe('ListSearchComponent', () => {
+  let component: ListSearchComponent;
+  let fixture: ComponentFixture<ListSearchComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ HeroesComponent ],
-      imports: [RouterTestingModule.withRoutes([]), HttpClientTestingModule],
+      declarations: [ ListSearchComponent ],
+      imports: [RouterTestingModule.withRoutes([]), HttpClientTestingModule]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(HeroesComponent);
+    fixture = TestBed.createComponent(ListSearchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should be created', () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });

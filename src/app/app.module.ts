@@ -10,9 +10,9 @@ import { AppRoutingModule }     from './app-routing.module';
 
 import { AppComponent }         from './app.component';
 import { DashboardComponent }   from './dashboard/dashboard.component';
-import { HeroDetailComponent }  from './hero-detail/hero-detail.component';
-import { HeroesComponent }      from './heroes/heroes.component';
-import { HeroSearchComponent }  from './hero-search/hero-search.component';
+import { ListDetailComponent }  from './list-detail/list-detail.component';
+import { ListsComponent }      from './lists/lists.component';
+import { ListSearchComponent }  from './list-search/list-search.component';
 import { MessagesComponent }    from './messages/messages.component';
 
 @NgModule({
@@ -32,10 +32,10 @@ import { MessagesComponent }    from './messages/messages.component';
   declarations: [
     AppComponent,
     DashboardComponent,
-    HeroesComponent,
-    HeroDetailComponent,
+    ListsComponent,
+    ListDetailComponent,
     MessagesComponent,
-    HeroSearchComponent
+    ListSearchComponent
   ],
   bootstrap: [ AppComponent ]
 })

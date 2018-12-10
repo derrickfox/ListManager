@@ -1,0 +1,21 @@
+<h2>My Lists</h2>
+
+<div>
+  <label>List name:
+    <input #listName />
+  </label>
+  <!-- (click) passes input value to add() and then clears the input -->
+  <button (click)="add(listName.value); listName.value=''">
+    add
+  </button>
+</div>
+
+<ul class="lists">
+  <li *ngFor="let list of lists">
+    <a routerLink="/detail/{{list.id}}">
+      <span class="badge">{{list.id}}</span> {{list.name}}
+    </a>
+    <button class="delete" title="delete list"
+      (click)="delete(list)">x</button>
+  </li>
+</ul>

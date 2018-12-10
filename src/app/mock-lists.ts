@@ -1,6 +1,6 @@
-import { Hero } from './hero-detail/hero';
+import { List } from './list-detail/list';
 
-export const HEROES: Hero[] = [
+export const LISTS: List[] = [
   { id: 11, name: 'Mr. Nice' },
   { id: 12, name: 'Narco' },
   { id: 13, name: 'Bombasto' },
