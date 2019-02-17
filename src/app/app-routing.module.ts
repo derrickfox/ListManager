@@ -6,7 +6,7 @@ import { ListsComponent }      from './lists/lists.component';
 import { ListDetailComponent }  from './list-detail/list-detail.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/lists', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: ListDetailComponent },
   { path: 'lists', component: ListsComponent }

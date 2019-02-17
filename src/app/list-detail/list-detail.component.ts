@@ -12,6 +12,7 @@ import { ListService }  from '../services/list.service';
 })
 export class ListDetailComponent implements OnInit {
   @Input() list: List;
+  @Input() id: number;
 
   constructor(
     private route: ActivatedRoute,
@@ -24,9 +25,8 @@ export class ListDetailComponent implements OnInit {
   }
 
   getList(): void {
-    const id = +this.route.snapshot.paramMap.get('id');
-    this.listService.getList(id)
-      .subscribe(list => this.list = list);
+    this.id = +this.route.snapshot.paramMap.get('id');
+    this.listService.getList(this.id).subscribe(list => this.list = list);
   }
 
   goBack(): void {
@@ -34,7 +34,6 @@ export class ListDetailComponent implements OnInit {
   }
 
  save(): void {
-    this.listService.updateList(this.list)
-      .subscribe(() => this.goBack());
+    this.listService.updateList(this.list).subscribe(() => this.goBack());
   }
 }

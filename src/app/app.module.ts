@@ -14,6 +14,7 @@ import { ListDetailComponent }  from './list-detail/list-detail.component';
 import { ListsComponent }      from './lists/lists.component';
 import { ListSearchComponent }  from './list-search/list-search.component';
 import { MessagesComponent }    from './messages/messages.component';
+import { DetailsPanelComponent } from './details-panel/details-panel.component';
 
 @NgModule({
   imports: [
@@ -35,7 +36,8 @@ import { MessagesComponent }    from './messages/messages.component';
     ListsComponent,
     ListDetailComponent,
     MessagesComponent,
-    ListSearchComponent
+    ListSearchComponent,
+    DetailsPanelComponent
   ],
   bootstrap: [ AppComponent ]
 })
